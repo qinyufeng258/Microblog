@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		$(function(){
+
+			function Person(name,age){
+				this.name = name;
+				this.age = age;
+
+				// this.getInfo = function(){
+				// 	console.log(thia.name + ":"+this.age);
+				// }
+			}
+			Person.prototype.value = 1;
+
+			var mark = new Person('Mark',14);
+			mark.sex = 'male';
+			var will = new Person('Will',19);
+			alert(mark.hasOwnProperty('age'));
+			alert(mark.hasOwnProperty('value'));
+		});
+		
+	</script>
+</html>
